@@ -1,1 +1,0 @@
-This is BogdanLun's first git project!

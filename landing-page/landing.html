@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trombones</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #eeeeee;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      #header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      #header-img {
+        width: 300px;
+      }
+      .nav-link {
+        padding: 0 45px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .main {
+        width: 800px;
+        margin: 0 auto;
+      }
+
+      #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .div-content {
+        padding: 10px;
+      }
+
+      .fas {
+        float: left;
+        color: orange;
+        font-size: 50px;
+        margin: 15px 30px;
+        width: 70px;
+      }
+
+      .text {
+        position: relative;
+        top: 10px;
+      }
+
+      iframe {
+        display: block;
+        margin: 40px auto;
+      }
+
+      #cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+      .card {
+        border: 1px solid black;
+        margin: auto 10px;
+        padding: 10px;
+        text-align: center;
+        width: calc(100% / 3);
+        box-sizing: border-box;
+        flex: 0 0 auto;
+      }
+      .card__title {
+        background-color: #dddddd;
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="images/original_trombones.png"
+        alt="Trombones Logo"
+      />
+
+      <nav id="nav-bar">
+        <ul>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#howitworks" class="nav-link">How It Works</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <div id="form">
+        <h1>Hand-crafted, home-made masterpieces</h1>
+        <form>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+          />
+          <input id="submit" type="submit" value="Get Started" />
+        </form>
+      </div>
+
+      <div id="features">
+        <div class="div-content" id="premium">
+          <i class="fas fa-fire"></i>
+          <div class="text">
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+
+        <div class="div-content" id="shipping">
+          <i class="fas fa-truck"></i>
+          <div class="text" id="shipping-text">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+
+        <div class="div-content" id="quality">
+          <i class="fas fa-battery-full"></i>
+          <div class="text">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <iframe
+        width="420"
+        height="315"
+        src="https://youtu.be/y8Yv4pnO7qc"
+      ></iframe>
+
+      <div id="cards">
+        <div class="card" id="card1">
+          <div class="card__title"><p>Tenor Trombone</p></div>
+
+          <p class="card__price">$600</p>
+          <p class="card__description">
+            Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+          </p>
+          <button type="button">Select</button>
+        </div>
+
+        <div class="card">
+          <div class="card__title"><p>Bass Trombone</p></div>
+
+          <p>$900</p>
+          <p class="card__description">
+            Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+          </p>
+          <button type="button">Select</button>
+        </div>
+
+        <div class="card">
+          <div class="card__title"><p>Valve Trombone</p></div>
+
+          <p class="card__price">$1200</p>
+          <p class="card__description">
+            Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+          </p>
+          <button type="button">Select</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <ul>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Contact</a>
+      </ul>
+      <p>Copyright 2016, Original Trombones</p>
+    </footer>
+  </body>
+</html>

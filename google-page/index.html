@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/all.css" />
+    <style>
+      .google-logo {
+        display: block;
+        margin: 150px auto 30px auto;
+      }
+      .search-input {
+        width: 550px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .fa-search {
+        position: absolute;
+        top: 13px;
+        left: 16px;
+        font-size: 15px;
+
+        width: 20px;
+        color: #9aa0a6;
+      }
+
+      .fa-microphone {
+        position: absolute;
+        top: 13px;
+        right: 16px;
+        font-size: 15px;
+
+        width: 20px;
+        color: #4285f4;
+      }
+
+      input {
+        display: block;
+        margin: 0 auto;
+
+        width: 500px;
+        height: 40px;
+        border-radius: 25px;
+        border: 1px solid #e5e7ea;
+        outline: none;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      input:hover {
+        box-shadow: 0 0 10px #e5e7ea;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 20px 15px;
+        padding: 0;
+      }
+
+      li {
+        display: inline;
+        padding: 8px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        border-bottom: 1px solid black;
+      }
+
+      .nav-right {
+        display: inline;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .sign-in-button {
+        background-color: #4683ec;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .sign-in-button:hover {
+        box-shadow: 0 2px #e5e7ea;
+      }
+      .sign-in-button > a {
+        color: #ffffff;
+        font-size: 16px;
+        padding: 5px 10px;
+        font-weight: 600;
+      }
+      .sign-in-button > a:hover {
+        border-bottom: none;
+      }
+
+      .button-1,
+      .button-2 {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f3f3f3;
+        color: #535961;
+        border: 1px solid #f3f3f3;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+      }
+
+      .button-1 {
+        position: absolute;
+        top: 20px;
+        left: 120px;
+      }
+
+      .button-2 {
+        position: absolute;
+        top: 20px;
+        left: 270px;
+      }
+
+      .button-1:hover,
+      .button-2:hover {
+        border: 2px solid #f3f3f3;
+        background-color: #f8f8f8;
+        color: #222;
+      }
+
+      .container {
+        width: 600px;
+        margin: 0 auto;
+      }
+      .button-container {
+        width: 550px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      footer {
+        background-color: #f2f2f2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+      }
+
+      .footer-nav-left {
+        float: left;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .footer-nav-left > a {
+        padding: 8px;
+        color: #535961;
+      }
+      .footer-nav-left > a:hover {
+        border-bottom: 1px solid #535961;
+      }
+
+      .footer-nav-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .footer-nav-right > a {
+        padding: 8px;
+        color: #535961;
+      }
+
+      .footer-nav-right > a:hover {
+        border-bottom: 1px solid #535961;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="">About</a></li>
+      <li><a href="">Store</a></li>
+    </ul>
+
+    <ul class="nav-right">
+      <li><a href="">Gmail</a></li>
+      <li><a href="">Images</a></li>
+      <li class="sign-in-button"><a href="">Sign in</a></li>
+    </ul>
+
+    <div class="container">
+      <img class="google-logo" src="images/google-logo.png" alt="Google Logo" />
+      <div class="search-input">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-microphone"></i>
+        <input type="text" name="google" value="" />
+      </div>
+
+      <div class="button-container">
+        <a class="button-1" href="">Google Search</a>
+        <a class="button-2" href="">I'm feeling lucky</a>
+      </div>
+
+      <footer>
+        <ul class="footer-nav-left">
+          <a href="">Advertising</a>
+          <a href="">Business</a>
+          <a href="">How Search Works</a>
+        </ul>
+
+        <ul class="footer-nav-right">
+          <a href="">Privacy</a>
+          <a href="">Terms</a>
+          <a href="">Settings</a>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
